@@ -1,7 +1,15 @@
 $(".proBtn").on('click', function(){
-  $('.projectDisplay').fadeToggle("slow", "linear");
-  $('.about').fadeToggle("fast", "linear");
+  $('.projectDisplay').fadeIn("slow", "linear");
+  $('.about').fadeOut("fast", "linear");
+  $(".techDisplay").fadeOut("fast", "linear");
 })
 $(".skillsBtn").on('click', function(){
-  $(".techDisplay").fadeToggle("slow", "linear");
+  $(".techDisplay").fadeIn("slow", "linear");
+  $('.projectDisplay').fadeOut("fast", "linear");
+  $('.about').fadeOut("fast", "linear");
 });
+$(".aboutBtn").on('click', function(){
+  $('.about').fadeIn("slow", "linear");
+  $(".techDisplay").fadeOut("fast", "linear");
+  $('.projectDisplay').fadeOut("fast", "linear");
+})

@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Portforlio version: 3.0.0</title>
+    <title>Julio's Portfolio</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Marcellus" rel="stylesheet">
@@ -46,6 +46,7 @@
         <div class="row header">
             <nav>
                 <ul>
+                    <li class="aboutBtn">About</li>
                     <li class="proBtn"><a href="#">Projects</a>
                     </li>
                     <li class="skillsBtn"><a href="#">Skills</a>
@@ -67,7 +68,7 @@
                 <h4>I am a <span class="name">Front End Web Developer</span></h4>
             </div>
             <div class="col-lg-12 col-md-12">
-                <p class="about">I am originally from New York City. Currently serving in the US Army as a Special Forces Soldier. I come from a background of solving complex problems, and enjoy learning how things work. My time in the Military has helped me develop many soft-skills, and has made me a great team player who can work and adapt to any situation on the fly. During my free time I enjoy playing basketball and football. My coding food of choice seems to be Peanut Butter M&M's.
+                <p class="about">I am originally from New York City. Currently serving in the US Army as a Special Operations Soldier. I come from a background of solving complex problems, and enjoy learning how things work on the internet. My time in the Military has helped me develop many soft-skills, and has made me a great team player who can work and adapt to any situation on the fly. During my free time I enjoy playing basketball and football. My coding food of choice seems to be Peanut Butter M&M's.
                 </p>
             </div>
         </div>
@@ -82,67 +83,53 @@
             </div>
         </div>
         <div class="row projects projectDisplay">
-            <div class="col-md-12 project-title">
-                <p>Resume Project</p>
+
+             <div class="col-md-12 project-title">
+                <p>Apollo</p>
             </div>
             <div class="col-md-4 col-sm-12 projectImg thumbnail">
-                <img src="images/resume.png" alt="Udacity Resume" />
+                <img src="images/apollo.png" alt="apollo gym app" />
             </div>
             <div class="project-details col-md-8">
-                <p>In this project I built four javaScript objects (Skills, Previous Jobs, Projects, and Schools). I then manipulate the DOM in order to pass these objects using various loops, while also using jQuery append and prepend functions, and finally CSS to visually style the resume.</p>
-                <br><span class=bold>Technology Used: HTML | javaScript | CSS | jQuery</span>
-                <br><span><a href="https://j8298c.github.io/Resume/" target="_blank">Project Link</a></span>
+                <p>Apollo is a gym tracking application which lets users create update and delete workouts. It is built using Mongo as the DB and Node for the server. Passport handles the applications user authentication. Originally built for me to be able to log and create new workout plans and access them from my mobile device.</p>
+                <br><span class=bold>Technology Used: HTML | javaScript | CSS | Node | Mongo | EJS | Express | Mongoose | Passport | Yarn</span>
+                <br><span><a href="https://ancient-hollows-78463.herokuapp.com/" target="_blank">Project Link</a></span>
             </div>
 
+            <div class="col-md-12 project-title">
+                <p>Github_card</p>
+            </div>
+            <div class="col-md-4 col-sm-12 projectImg thumbnail">
+                <img src="images/githubcard.png" alt="Github Cards project" />
+            </div>
+            <div class="project-details col-md-8">
+                <p>Github card uses the github api to retrieve users information and display it in a card based profile. Built with React and Redux to handle the new javascript fetch api to retrieve users information from the github api. Testing is done using Airbnb's Enzyme and Chai, React-Router handles the applications routing. Work is still being done on this Repo to include adding user authentication in order to let users sign in and track issues with thier repos.
+                </p>
+                <br><span class=bold>Technology Used: React | javaScript | Redux | Webpack | Enzyme | React-Router | Chai | Yarn</span>
+                <br><span><a href="https://j8298c.github.io/github_card/#/" target="_blank">Project Link</a></span>
+            </div>
 
-            <div class="col-md-12 project-title">
-                <p>Arcade Clone</p>
+             <div class="col-md-12 project-title">
+                <p>Yumshub</p>
             </div>
             <div class="col-md-4 col-sm-12 projectImg thumbnail">
-                <img src="images/arcade.png" alt="Udacity Arcade Clone" />
+                <img src="images/yumshub.png" alt="yumshub a grubhub clone" />
             </div>
             <div class="project-details col-md-8">
-                <p>This project focused on more advanced javaScript and HTML properties. Udacity provided all the images for the player, enemies, and background. I wrote the code to render players and enemies. I also wrote the algorithm for how the player reacts either when reaching the safe zone(water) and what happens when the player and enemy characters make contact. I utilized object oriented programming using the "this" keyword for both the player and enemy prototype functions. I also wrote the readme documentation to explain how the game functions.
+                <p>Yumshub is a clone of grubhub built with React, React-Router and Redux and uses firebase as its database. Yumshub display a list of resturants and allows you to search by the the type of food i.e.(American, Spanish). Once inside the restuarant page the user can see the restaurants menu, and add menu items to thier shopping cart. Yumshub was designed using React-Bootstrap alongside custom css. Tetsing is done using Airbnb's Enzyme, Chai alongside Sinon. 
                 </p>
-                <br><span class=bold>Technology Used: HTML5 Canvas | javaScript | OOJ</span>
-                <br><span><a href="https://j8298c.github.io/arcade-game/" target="_blank">Project Link</a></span>
+                <br><span class=bold>Technology Used: HTML5 | javaScript | CSS3 | React | React-router | Redux | React-Bootstrap | Webpack | Enzyme | Sinon | Chai | Firebase | Yarn </span>
+                <br><span><a href="https://j8298c.github.io/yumshub/" target="_blank">Project Link</a></span>
             </div>
-            <div class="col-md-12 project-title">
-                <p>RGB Color Utility</p>
-            </div>
-            <div class="col-md-4 col-sm-12 projectImg thumbnail">
-                <img src="images/RGBColorPicker.png" alt="RGB App" />
-            </div>
-            <div class="project-details col-md-8">
-                <p>The color picker game helped me learn more about DOM manipulation using vanilla javaScript. I add and remove CSS classes from elements on the DOM. Using javaScript "Math.random" to let javaScript automatically pick the RGB color number. There are two modes in the game in which depending on what mode the user chooses it will either display three or six choices.
-                </p>
-                <br><span class=bold>Technology Used: HTML5 | javaScript | CSS3 </span>
-                <br><span><a href="https://j8298c.github.io/ColorPicker-Game/" target="_blank">Project Link</a></span>
-            </div>
-            <div class="col-md-12 project-title">
-                <p>To-Do List</p>
-            </div>
-            <div class="col-md-4 col-sm-12 projectImg thumbnail">
-                <img src="images/todo.png" alt="todoApp" />
-            </div>
-            <div class="project-details col-md-8">
-                <p>The to-do app uses CSS animations and font-awesome icons library included with javaScript to add and remove tasks from the to-do list. I also utilized CSS3 gradients for the background of the web app. Once again using javaScript to manipulate the DOM, and add html such as the span element that creates a new to-do list item.
-                </p>
-                <br><span class=bold>Technology Used: HTML5 | javaScript | CSS3 </span>
-                <br><span><a href="https://j8298c.github.io/toDo-list/" target="_blank">Project Link</a></span>
-            </div>
+
         </div>
+
         <div class="row projectDisplay">
             <div class="col-md-12">
                 <hr>
             </div>
         </div>
-        <div class="row techDisplay">
-            <div class="skills col-md-12">
-                <h2 class="headline">Technical Skills</h2>
-            </div>
-        </div>
-        <div class="techSkills row techDisplay">
+         <div class="techSkills row techDisplay">
             <div class="col-md-4 col-sm-12 text-center">
                 <h5>Proficient Languages</h5>
                 <ul>
@@ -150,6 +137,7 @@
                     <li>CSS/CSS3</li>
                     <li>JavaScript</li>
                     <li>Python</li>
+                    <li>PHP</li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 text-center borderLeft">
@@ -160,6 +148,14 @@
                     <li>Knockout JS</li>
                     <li>React</li>
                     <li>Node.JS</li>
+                    <li>Express</li>
+                    <li>Chai</li>
+                    <li>Mocha</li>
+                    <li>Enzyme</li>
+                    <li>Symfony</li>
+                    <li>Laravel</li>
+                    <li>Redux</li>
+                    <li>Redux-Thunk</li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 text-center">
@@ -170,11 +166,17 @@
                     <li>Gulp</li>
                     <li>Grunt</li>
                     <li>Web Optimization</li>
+                    <li>Webpack</li>
+                    <li>Yarn</li>
+                    <li>Vagrant</li>
+                    <li>Jira</li>
+                    <li>Jenkins</li>
+                    <li>Heroku</li>
                 </ul>
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/app.js" charset="utf-8"></script>
 </body>
