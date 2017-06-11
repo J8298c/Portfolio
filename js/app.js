@@ -1,15 +1,6 @@
-$(".proBtn").on('click', function(){
-  $('.projectDisplay').fadeIn("slow", "linear");
-  $('.about').fadeOut("fast", "linear");
-  $(".techDisplay").fadeOut("fast", "linear");
-})
-$(".skillsBtn").on('click', function(){
-  $(".techDisplay").fadeIn("slow", "linear");
-  $('.projectDisplay').fadeOut("fast", "linear");
-  $('.about').fadeOut("fast", "linear");
-});
-$(".aboutBtn").on('click', function(){
-  $('.about').fadeIn("slow", "linear");
-  $(".techDisplay").fadeOut("fast", "linear");
-  $('.projectDisplay').fadeOut("fast", "linear");
-})
+(function (window, document) {
+            document.getElementById('toggle').addEventListener('click', function (e) {
+                document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+                document.getElementById('toggle').classList.toggle('x');
+            });
+        })(this, this.document);
