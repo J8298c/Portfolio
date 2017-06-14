@@ -2,215 +2,145 @@ body{
   background: #EBEBEB;
   font-family: 'Roboto Slab', serif;
 }
-.welcome{
-  text-align: center;
-  font-size: 40px;
-}
 .name {
-  color: #3C4DB0;
+  color: #FF4081;
 }
-.pure-g.title {
-    font-size: 43px;
-    margin-top: -69px;
-    text-align: center;
-}
-.side-title {
-    font-size: 40px;
-    margin-left: 24px;
-}
-.project-title {
-    font-size: 43px;
-    text-align: center;
-}
-.project-img{
-  width: 100%;
-}
-.project-img:hover{
-  transform: scale(1.3);
-  margin-left: 5px;
+.pure-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 32px auto;
 }
 hr.divider {
-    width: 66%;
-    border-top-color: #3C4DB0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(60, 78, 177, 0), rgba(60, 78, 177, 0.75), rgba(60, 78, 177, 0));
+}
+.hrdiv{
+  margin-top: 45px;
 }
 
-.project-description.pure-u-1-1 {
-    font-size: 29px;
-    margin-left: 38px;
-    margin-right: 24px;
-}
-button.pure-button.pure-button-primary {
-    margin-left: 19%;
-    width: 30%;
-    font-size: 70%;
-}
-.project-buttons.pure-u-1-2 {
+
+@media screen and (max-width: 600px){
+  .pure-menu-heading {
+    text-transform: uppercase;
+    color: #E1E3F3;
+  }
+  .custom-toggle .bar {
+    background-color: #FF4081;
+  }
+  .spacer-nav{
+    width: 100%;
+    background-color: rgba(30, 30, 30,1);
+  }
+  .pure-menu-link {
+    color: #E1E3F3;
+  }
+  .title {
+    text-align: center;
+  }
+  .job-description{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  svg:not(:root) {
+    overflow: hidden;
     margin: 0 auto;
+  }
+  .about {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+  .div-title {
+    text-align: center;
+    color: #3C4DB0;
+  }
+  .about p {
+    text-align: justify;
+    font-size: 15px;
+  }
+  .spacer {
+    margin-top: 24px;
+  }
 }
-.project-tech button{
-  font-size: 8px;
-  margin-left: 2px;
-  background-color: rgba(30, 30, 30,1);
-  margin-top: 5px;
-  margin-bottom: 5px;
-
-}
-
-
-
-
 /*
-  Menu Styling
+  Menu Css
 */
-.custom-menu-wrapper {
+.custom-wrapper {
           background-color: #3C4DB0;
-          margin-bottom: 2.5em;
-          white-space: nowrap;
-          position: relative;
-      }
-
-      .custom-menu {
-          display: inline-block;
-          width: auto;
-          vertical-align: middle;
+          color: #E1E3F3;
+          margin-bottom: 1em;
           -webkit-font-smoothing: antialiased;
+          height: 2.1em;
+          overflow: hidden;
+          -webkit-transition: height 0.5s;
+          -moz-transition: height 0.5s;
+          -ms-transition: height 0.5s;
+          transition: height 0.5s;
       }
 
-      .custom-menu .pure-menu-link,
-      .custom-menu .pure-menu-heading {
-          color: #E1E3F2;
+      .custom-wrapper.open {
+          height: 14em;
       }
 
-      .custom-menu .pure-menu-link:hover,
-      .custom-menu .pure-menu-heading:hover {
-          background-color: #3C4DB0;
+      .custom-menu-3 {
+          text-align: right;
       }
 
-      .custom-menu-top {
-          position: relative;
-          padding-top: .5em;
-          padding-bottom: .5em;
-      }
-
-      .custom-menu-brand {
-          display: block;
-          text-align: center;
-          position: relative;
-      }
-
-      .custom-menu-toggle {
-          width: 44px;
-          height: 44px;
-          display: block;
+      .custom-toggle {
+          width: 34px;
+          height: 34px;
           position: absolute;
-          top: 3px;
+          top: 0;
           right: 0;
           display: none;
       }
 
-      .custom-menu-toggle .bar {
-          background-color: white;
+      .custom-toggle .bar {
+          background-color: #FF4081;
           display: block;
           width: 20px;
           height: 2px;
           border-radius: 100px;
           position: absolute;
-          top: 22px;
-          right: 12px;
+          top: 18px;
+          right: 7px;
           -webkit-transition: all 0.5s;
           -moz-transition: all 0.5s;
           -ms-transition: all 0.5s;
           transition: all 0.5s;
       }
 
-      .custom-menu-toggle .bar:first-child {
+      .custom-toggle .bar:first-child {
           -webkit-transform: translateY(-6px);
           -moz-transform: translateY(-6px);
           -ms-transform: translateY(-6px);
           transform: translateY(-6px);
       }
 
-      .custom-menu-toggle.x .bar {
+      .custom-toggle.x .bar {
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg);
       }
 
-      .custom-menu-toggle.x .bar:first-child {
+      .custom-toggle.x .bar:first-child {
           -webkit-transform: rotate(-45deg);
           -moz-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
       }
 
-      .custom-menu-screen {
-          background-color: rgba(0, 0, 0, 0.5);
-          -webkit-transition: all 0.5s;
-          -moz-transition: all 0.5s;
-          -ms-transition: all 0.5s;
-          transition: all 0.5s;
-          height: 3em;
-          width: 70em;
-          position: absolute;
-          top: 0;
-          z-index: -1;
-      }
+      @media (max-width: 47.999em) {
 
-      .custom-menu-tucked .custom-menu-screen {
-          -webkit-transform: translateY(-44px);
-          -moz-transform: translateY(-44px);
-          -ms-transform: translateY(-44px);
-          transform: translateY(-44px);
-      }
-
-      @media (max-width: 62em) {
-          s.bar{
-            background-color: #E1E3F2;
+          .custom-menu-3 {
+              text-align: left;
           }
-          .custom-menu {
+
+          .custom-toggle {
               display: block;
-          }
-
-          .custom-menu-toggle {
-              display: block;
-              display: none\9;
-          }
-
-          .custom-menu-bottom {
-              position: absolute;
-              width: 100%;
-              border-top: 1px solid #eee;
-              background-color: #808080\9;
-              z-index: 100;
-          }
-
-          .custom-menu-bottom .pure-menu-link {
-              opacity: 1;
-              -webkit-transform: translateX(0);
-              -moz-transform: translateX(0);
-              -ms-transform: translateX(0);
-              transform: translateX(0);
-              -webkit-transition: all 0.5s;
-              -moz-transition: all 0.5s;
-              -ms-transition: all 0.5s;
-              transition: all 0.5s;
-          }
-
-          .custom-menu-bottom.custom-menu-tucked .pure-menu-link {
-              -webkit-transform: translateX(-140px);
-              -moz-transform: translateX(-140px);
-              -ms-transform: translateX(-140px);
-              transform: translateX(-140px);
-              opacity: 0;
-              opacity: 1\9;
-          }
-
-          .pure-menu-horizontal.custom-menu-tucked {
-              z-index: -1;
-              top: 45px;
-              position: absolute;
-              overflow: hidden;
           }
 
       }

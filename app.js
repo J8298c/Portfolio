@@ -1,27 +1,39 @@
-//menu toggle in mobile view
 (function (window, document) {
-      document.getElementById('toggle').addEventListener('click', function (e) {
-          document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
-          document.getElementById('toggle').classList.toggle('x');
-      });
-      })(this, this.document);
+var menu = document.getElementById('menu'),
+    WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
 
-      //adds tech buttons to page takes in an array
-      function addTech(arr, projectDiv){
-        const $projectTech = projectDiv;
-        arr.forEach((button)=>{
-          $projectTech.append('<button class="pure-button pure-button-primary techbtn">' + button + '</button>' );
-        })
-      };
+function toggleHorizontal() {
+    [].forEach.call(
+        document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+        function(el){
+            el.classList.toggle('pure-menu-horizontal');
+        }
+    );
+};
 
-      //decalre projects and run addtech function
-      const $apollo = $('.apollo')
-      const apollotech = ['node', 'mongo', 'mongoose', 'react', 'redux']
-      addTech(apollotech, $apollo);
+function toggleMenu() {
+    // set timeout so that the panel has a chance to roll up
+    // before the menu switches states
+    if (menu.classList.contains('open')) {
+        setTimeout(toggleHorizontal, 500);
+    }
+    else {
+        toggleHorizontal();
+    }
+    menu.classList.toggle('open');
+    document.getElementById('toggle').classList.toggle('x');
+};
 
-      const $githubCard = $('.github-card');
-      const githubtech = ['Yarn', 'Webpack', 'Chai', 'Enzyme', 'React', 'React-Router', 'Redux', 'Mocha'];
-      addTech(githubtech, $githubCard);
+function closeMenu() {
+    if (menu.classList.contains('open')) {
+        toggleMenu();
+    }
+}
 
-      const $yumshub = $('.yumshub');
-      const yumshubtech = []
+document.getElementById('toggle').addEventListener('click', function (e) {
+    toggleMenu();
+    e.preventDefault();
+});
+
+window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+})(this, this.document);
