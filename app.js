@@ -1,39 +1,59 @@
+/*
+menu toggle function for mobile
+*/
 (function (window, document) {
-var menu = document.getElementById('menu'),
-    WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          document.getElementById('tuckedMenu').classList.toggle('custom-menu-tucked');
+          document.getElementById('toggle').classList.toggle('x');
+      });
+      })(this, this.document);
+/*
+  function for scrolling from navbar
+*/
 
-function toggleHorizontal() {
-    [].forEach.call(
-        document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-        function(el){
-            el.classList.toggle('pure-menu-horizontal');
-        }
-    );
-};
+function scrollNav() {
+  $('.nav a').click(function(){
+    //Toggle Class
+    $(".active").removeClass("active");
+    $(this).closest('li').addClass("active");
+    var theClass = $(this).attr("class");
+    $('.'+theClass).parent('li').addClass('active');
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 160
+    }, 1000);
+    return false;
+  });
+  $('.scrollTop a').scrollTop();
+}
+scrollNav();
 
-function toggleMenu() {
-    // set timeout so that the panel has a chance to roll up
-    // before the menu switches states
-    if (menu.classList.contains('open')) {
-        setTimeout(toggleHorizontal, 500);
-    }
-    else {
-        toggleHorizontal();
-    }
-    menu.classList.toggle('open');
-    document.getElementById('toggle').classList.toggle('x');
-};
+$.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
 
-function closeMenu() {
-    if (menu.classList.contains('open')) {
-        toggleMenu();
-    }
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+
+  window.onscroll = function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }
 }
 
-document.getElementById('toggle').addEventListener('click', function (e) {
-    toggleMenu();
-    e.preventDefault();
-});
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
 
-window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
-})(this, this.document);
+moveItItem.prototype.update = function(scrollTop){
+  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+
+// Initialization
+$(function(){
+  $('[data-scroll-speed]').moveIt();
+});
