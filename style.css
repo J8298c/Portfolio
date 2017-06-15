@@ -54,11 +54,25 @@ h3.div-title.project-title {
     color: #FF4081;
 }
 .footer{
-  background-color: #3C4DB0;
-  width: 100%;
-  margin-top: 24px;
+  display: none;
 }
-@media screen and (max-width: 600px){
+.project-description {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+button.pure-button {
+    width: 39%;
+    background-color: #26D583;
+    color: #E1E3F3;
+}
+.launch-btn {
+    float: right;
+    margin-right: 26px;
+}
+
+@media screen and (max-width: 700px){
   .pure-menu-heading {
     text-transform: uppercase;
     color: #E1E3F3;
@@ -106,11 +120,13 @@ h3.div-title.project-title {
     font-size: 17px;
   }
   button.pure-button.launch-btn {
-      width: 75%;
       float: right;
       margin-right: 16px;
+  }
+  button.pure-button{
       background-color: #26D583;
       color: #E1E3F3;
+      width: 75%;
   }
   .repo-btn{
       width: 75%;
@@ -122,7 +138,7 @@ h3.div-title.project-title {
   }
   .contact-icon {
     text-align: center;
-    font-size: 27px;
+    font-size: 31px;
   }
   .footer {
     background-color: #3C4DB0;
@@ -130,9 +146,13 @@ h3.div-title.project-title {
     margin-top: 0px;
     height: 70px;
     /* font-size: 11px; */
+    display: block;
   }
   .projects.pure-g {
     margin-bottom: 53px;
+  }
+  .hide {
+    display: none !important;
   }
 }
 /*
@@ -143,6 +163,7 @@ h3.div-title.project-title {
   margin-bottom: 2.5em;
   white-space: nowrap;
   position: relative;
+  width: 100%;
 }
 
 .custom-menu {
@@ -217,7 +238,7 @@ h3.div-title.project-title {
 }
 
 .custom-menu-screen {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(30, 30, 30, 1);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -227,6 +248,7 @@ h3.div-title.project-title {
   position: absolute;
   top: 0;
   z-index: -1;
+  color: #E1E3F3;
 }
 
 .custom-menu-tucked .custom-menu-screen {
