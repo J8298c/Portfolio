@@ -57,3 +57,18 @@ moveItItem.prototype.update = function(scrollTop){
 $(function(){
   $('[data-scroll-speed]').moveIt();
 });
+
+
+
+
+$empire = $('.empire');
+
+$('.welcome-btn').on('click', ()=>{
+  $('.welcome-btn').fadeOut();
+    $empire.animate({
+      marginTop: "-=340px",
+      width: "7%",
+      position: "relative",
+      zIndex: "2"
+    }, 1500)
+})
