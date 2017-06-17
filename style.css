@@ -53,9 +53,17 @@ h3.div-title.project-title {
     font-size: 38px;
     color: #FF4081;
 }
-.footer{
-  display: none;
-}
+  .footer {
+    background-color: #3C4DB0;
+    width: 100%;
+    margin-top: 45px;
+    height: 70px;
+    /* font-size: 11px; */
+    display: block;
+  }
+  .footer a {
+    display: none;
+  }
 .project-description {
     margin-left: 20px;
     margin-right: 20px;
@@ -71,6 +79,18 @@ button.pure-button {
     float: right;
     margin-right: 26px;
 }
+.aboutme-contact {
+    color: #3C4DB0;
+    font-size: 36px;
+}
+.aboutme-contact:hover{
+    color: #FF4081;
+}
+.contactme {
+  text-align: center;
+  margin-top: 50px;
+}
+
 
 @media screen and (max-width: 700px){
   .pure-menu-heading {
@@ -103,6 +123,7 @@ button.pure-button {
     margin-right: 5px;
     padding: 5px;
   }
+
   .div-title {
     color: #3C4DB0;
   }

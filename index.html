@@ -1,133 +1,150 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div class="custom-menu-wrapper">
-          <div class="pure-menu custom-menu custom-menu-top">
-              <a href="#" class="pure-menu-heading custom-menu-brand">JCM</a>
-              <a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
-          </div>
-          <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
-              <div class="custom-menu-screen"></div>
-              <ul class="pure-menu-list">
-                  <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
-                  <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">Projects</a></li>
-                  <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
-              </ul>
-          </div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="custom-menu-wrapper">
+    <div class="pure-menu custom-menu custom-menu-top">
+      <a href="#" class="pure-menu-heading custom-menu-brand">JCM</a>
+      <a href="#" class="custom-menu-toggle" id="toggle">
+        <s class="bar"></s>
+        <s class="bar"></s>
+      </a>
+    </div>
+    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu">
+      <div class="custom-menu-screen"></div>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item"><a href="#projects" class="pure-menu-link">Projects</a></li>
+        <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="pure-g portfolio">
+    <div class="intro pure-u-1">
+      <div class="pure-u-1">
+        <h1 class="title">Hi I'm <span class="name">Julio</span></h1>
+        <p class="title job-description">I am a <span class="name">FullStack Developer</span> from New York City</p>
       </div>
-      <div class="pure-g portfolio">
-        <div class="intro">
-          <div class="pure-u-1">
-              <h1 class="title">Hi I'm <span class="name">Julio</span></h1>
-              <p class="title job-description">I am a <span class="name">FullStack Developer</span> from New York City</p>
-          </div>
-          <div class="pure-u-1">
-            <img src="./images/empire.svg" class="pure-img empire">
-          </div>
+      <div class="pure-u-1">
+        <img src="./images/empire.svg" class="pure-img empire">
       </div>
-        <div class="pure-u-1 hrdiv">
-          <hr class="divider">
-        </div>
-        <div class="pure-u-1 about" id="about">
-            <h3 class="div-title">About Me</h3>
-            <p>Hello I'm Julio, I am a Full Stack developer. I enjoy working with Node/Express, React, Vue.js, and much more. I am a passionate program who enjoys writing clean readable code that can scale. I have great communication skills and work well both independently or as part of a team.</p>
-        </div>
-        <div class="pure-u-1 hrdiv">
-          <hr class="divider">
-        </div>
-        <div class="projects pure-g">
-          <div class="pure-u-1">
-            <h3 class="div-title" id="projects">Projects</h3>
-          </div>
-          <div class="pure-u-1 spacer project-title">
-            <h3 class="div-title project-title">Apollo</h3>
-          </div>
-          <div class="pure-u-1-2">
-            <img src="./images/apollo_macbook.png" alt="apollo splash page on macbook" class="project-img pure-img">
-          </div>
-          <div class="pure-u-1-2">
-            <img src="./images/apollo_iphone.png" alt="apollo splash page on iphone" class="project-img pure-img">
-          </div>
-          <div class="pure-u-1 project-description">
-            <p>Apollo is a excersise loggin application, that lets users create, edit and delete workouts. I designed apollo for myself to be able to create my own workouts right on my phone and display them while I was at the gym. Apollo is built using Express, Node, and Mongo DB. I am still actively developing on apollo during my spare time, in order to add better features and make it more user centric.</p>
-          </div>
-          <div class="pure-u-1-2">
-            <a href="https://apollogym.herokuapp.com/"><button class="pure-button launch-btn">Launch App</button></a>
-          </div>
-          <div class="pure-u-1-2">
-            <a href="https://github.com/J8298c/apollo"><button class="pure-button repo-btn">Github Repo</button></a>
-          </div>
-          <div class="pure-u-1 hrdiv">
-            <hr class="divider">
-          </div>
-          <div class="pure-u-1 spacer project-title">
-            <h3 class="div-title project-title">Github Card</h3>
-          </div>
-          <div class="pure-u-1-2">
-            <img src="./images/github_card_mac.png" alt="apollo splash page on macbook" class="project-img pure-img">
-          </div>
-          <div class="pure-u-1-2">
-            <img src="./images/githubcard_iphone.png" alt="apollo splash page on iphone" class="project-img pure-img">
-          </div>
-          <div class="pure-u-1 project-description">
-            <p>Github card is an application that renders a github users profile information, simply by searching the users github username. Some of the information that is displayed from the users profile include the users repository count, followers, following, starred repositories, the user blog if they have one. This project was a developed while I was exploring the Github api and its offerings, Githubcard was developed using React, and React Router.</p>
-          </div>
-          <div class="pure-u-1-2">
-            <a href="https://j8298c.github.io/github_card/#/"><button class="pure-button launch-btn">Launch App</button></a>
-          </div>
-          <div class="pure-u-1-2">
-            <a href="https://github.com/J8298c/github_card"><button class="pure-button repo-btn">Github Repo</button></a>
-          </div>
-          <div class="pure-u-1 hrdiv">
-            <hr class="divider">
-          </div>
-          <div class="pure-u-1 spacer project-title">
-            <h3 class="div-title project-title">YumsHub</h3>
-          </div>
-          <div class="pure-u-1-2">
-            <img src="./images/yumshub_mac.png" alt="apollo splash page on macbook" class="project-img pure-img">
-          </div>
-          <div class="pure-u-1-2">
-            <img src="./images/yumshub_iphone.png" alt="apollo splash page on iphone" class="project-img pure-img">
-          </div>
-          <div class="pure-u-1 project-description">
-            <p>Yumshub is a clone of the popular Grubhub application. I developed Yumshub using React for the front end and Firebase for the backend. When a user logs they are presented with a list of restaurants to choose from, there is also a search bar in which the user can search for a restaurant by its food category(american, latin). The async operations are handled by Redux, and Fetch().</p>
-          </div>
-          <div class="pure-u-1-2">
-            <a href="https://j8298c.github.io/yumshub/"><button class="pure-button launch-btn">Launch App</button></a>
-          </div>
-          <div class="pure-u-1-2">
-            <a href="https://github.com/J8298c/yumshub"><button class="pure-button repo-btn">Github Repo</button></a>
-          </div>
-        </div>
-        <div class="pure-u-1 hrdiv hide">
-          <hr class="divider">
-        </div>
-        <div class="contact-me hide">
-            <div class="pure-u-1">
-              <h3 class="div-title">Contact Me</h3>
-            </div>
-        </div>
-        <div class="pure-g footer">
-              <div class="pure-u-1-3 contact-icon">
-                <a href="mailto:juliocmojica@gmail.com" class="pure-menu-link"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            </div>
-            <div class="pure-u-1-3 contact-icon">
-              <a href="https://github.com/J8298c" class="pure-menu-link"><i class="fa fa-github" aria-hidden="true"></i></a>
-          </div>
-            <div class="pure-u-1-3 contact-icon">
-                <a href="https://linkedin.com/in/juliocmojica" class="pure-menu-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-          </div>
+    </div>
+    <div class="pure-u-1 hrdiv">
+      <hr class="divider">
+    </div>
+    <div class="pure-u-1 about" id="about">
+      <h3 class="div-title">About Me</h3>
+      <p>Hello I'm Julio, I am a Full Stack developer. I am Motivated self starter who can learn and adapt quickly. I have a passion for planing and developing good clean human readable code. I work well both independantly and in a team enviorment. I am always on the lookout for new technologoies and framworks that will help me build better products. If you want to know more about me feel free to reach out and lets connect.</p>
+    </div>
+    <div class="pure-u-1-3 contactme">
+      <a href="mailto:juliocmojica@gmail.com" id="aboutcontact"><i class="fa fa-envelope aboutme-contact" aria-hidden="true"></i></a>
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="./app.js"></script>
-  </body>
+      <div class="pure-u-1-3 contactme">
+        <a href="https://github.com/J8298c" id="aboutcontact"><i class="fa fa-github aboutme-contact" aria-hidden="true"></i></a>
+      </div>
+      <div class="pure-u-1-3 contactme">
+        <a href="https://linkedin.com/in/juliocmojica" id="aboutcontact"><i class="fa fa-linkedin-square aboutme-contact" aria-hidden="true"></i></a>
+      </div>
+    <div class="pure-u-1 hrdiv">
+      <hr class="divider">
+    </div>
+    <div class="projects pure-g">
+      <div class="pure-u-1">
+        <h3 class="div-title" id="projects">Projects</h3>
+      </div>
+      <div class="pure-u-1 spacer project-title">
+        <h3 class="div-title project-title">Apollo</h3>
+      </div>
+      <div class="pure-u-1-2">
+        <img src="./images/apollo_macbook.png" alt="apollo splash page on macbook" class="project-img pure-img">
+      </div>
+      <div class="pure-u-1-2">
+        <img src="./images/apollo_iphone.png" alt="apollo splash page on iphone" class="project-img pure-img">
+      </div>
+      <div class="pure-u-1 project-description">
+        <p>Apollo is a excersise loggin application, that lets users create, edit and delete workouts. I designed apollo for
+          myself to be able to create my own workouts right on my phone and display them while I was at the gym. Apollo is
+          built using Express, Node, and Mongo DB. I am still actively developing on apollo during my spare time, in order
+          to add better features and make it more user centric.</p>
+      </div>
+      <div class="pure-u-1-2">
+        <a href="https://apollogym.herokuapp.com/"><button class="pure-button launch-btn">Launch App</button></a>
+      </div>
+      <div class="pure-u-1-2">
+        <a href="https://github.com/J8298c/apollo"><button class="pure-button repo-btn">Github Repo</button></a>
+      </div>
+      <div class="pure-u-1 hrdiv">
+        <hr class="divider">
+      </div>
+      <div class="pure-u-1 spacer project-title">
+        <h3 class="div-title project-title">Github Card</h3>
+      </div>
+      <div class="pure-u-1-2">
+        <img src="./images/github_card_mac.png" alt="apollo splash page on macbook" class="project-img pure-img">
+      </div>
+      <div class="pure-u-1-2">
+        <img src="./images/githubcard_iphone.png" alt="apollo splash page on iphone" class="project-img pure-img">
+      </div>
+      <div class="pure-u-1 project-description">
+        <p>Github card is an application that renders a github users profile information, simply by searching the users github
+          username. Some of the information that is displayed from the users profile include the users repository count,
+          followers, following, starred repositories, the user blog if they have one. This project was a developed while
+          I was exploring the Github api and its offerings, Githubcard was developed using React, and React Router.</p>
+      </div>
+      <div class="pure-u-1-2">
+        <a href="https://j8298c.github.io/github_card/#/"><button class="pure-button launch-btn">Launch App</button></a>
+      </div>
+      <div class="pure-u-1-2">
+        <a href="https://github.com/J8298c/github_card"><button class="pure-button repo-btn">Github Repo</button></a>
+      </div>
+      <div class="pure-u-1 hrdiv">
+        <hr class="divider">
+      </div>
+      <div class="pure-u-1 spacer project-title">
+        <h3 class="div-title project-title">YumsHub</h3>
+      </div>
+      <div class="pure-u-1-2">
+        <img src="./images/yumshub_mac.png" alt="apollo splash page on macbook" class="project-img pure-img">
+      </div>
+      <div class="pure-u-1-2">
+        <img src="./images/yumshub_iphone.png" alt="apollo splash page on iphone" class="project-img pure-img">
+      </div>
+      <div class="pure-u-1 project-description">
+        <p>Yumshub is a clone of the popular Grubhub application. I developed Yumshub using React for the front end and Firebase
+          for the backend. When a user logs they are presented with a list of restaurants to choose from, there is also a
+          search bar in which the user can search for a restaurant by its food category(american, latin). The async operations
+          are handled by Redux, and Fetch().</p>
+      </div>
+      <div class="pure-u-1-2">
+        <a href="https://j8298c.github.io/yumshub/"><button class="pure-button launch-btn">Launch App</button></a>
+      </div>
+      <div class="pure-u-1-2">
+        <a href="https://github.com/J8298c/yumshub"><button class="pure-button repo-btn">Github Repo</button></a>
+      </div>
+    </div>
+    <div class="pure-g footer">
+      <div class="pure-u-1-3 contact-icon">
+        <a href="mailto:juliocmojica@gmail.com" class="pure-menu-link"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <div class="pure-u-1-3 contact-icon">
+        <a href="https://github.com/J8298c" class="pure-menu-link"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
+      <div class="pure-u-1-3 contact-icon">
+        <a href="https://linkedin.com/in/juliocmojica" class="pure-menu-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
 </html>
