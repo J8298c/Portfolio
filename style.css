@@ -61,9 +61,6 @@ h3.div-title.project-title {
     /* font-size: 11px; */
     display: block;
   }
-  .footer a {
-    display: none;
-  }
 .project-description {
     margin-left: 20px;
     margin-right: 20px;
@@ -90,7 +87,11 @@ button.pure-button {
   text-align: center;
   margin-top: 50px;
 }
-
+.footer a {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
 
 @media screen and (max-width: 700px){
   .pure-menu-heading {
@@ -174,6 +175,9 @@ button.pure-button {
   }
   .hide {
     display: none !important;
+  }
+  .footer a {
+    display: block;
   }
 }
 /*
