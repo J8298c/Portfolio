@@ -53,7 +53,7 @@ h3.div-title.project-title {
     font-size: 38px;
     color: #FF4081;
 }
-  .footer {
+.footer {
     background-color: #3C4DB0;
     width: 100%;
     margin-top: 45px;
@@ -61,6 +61,10 @@ h3.div-title.project-title {
     /* font-size: 11px; */
     display: block;
   }
+.pure-menu-link:hover {
+    background-color: #3C4DB0;
+    /* border: 1px solid #3C4DB0; */
+}
 .project-description {
     margin-left: 20px;
     margin-right: 20px;
