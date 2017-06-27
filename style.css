@@ -1,6 +1,6 @@
 body{
   background: #EBEBEB;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', sans-serif;
 }
 .portfolio {
     max-width:860px;
@@ -53,6 +53,7 @@ h3.div-title {
 }
 h3.div-title {
     color: #3C4DB0;
+    text-align: center;
 }
 h3.div-title.project-title {
     text-align: center;
@@ -76,11 +77,13 @@ h3.div-title.project-title {
     margin-right: 20px;
     text-align: center;
     font-size: 20px;
+    margin-bottom:30px;
 }
 button.pure-button {
     width: 39%;
     background-color: #26D583;
-    color: #E1E3F3;
+    color: white;
+    font-size:18px;
 }
 .launch-btn {
     float: right;
@@ -134,6 +137,9 @@ button.pure-button {
     margin-right: 5px;
     padding: 5px;
   }
+    .pure-u-1.about p{
+        font-size:20px;
+    }
 
   .div-title {
     color: #3C4DB0;
@@ -199,6 +205,7 @@ button.pure-button {
   white-space: nowrap;
   position: relative;
   width: 100%;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .custom-menu {
@@ -333,4 +340,5 @@ button.pure-button {
     position: absolute;
     overflow: hidden;
   }
+
 }
